@@ -33,7 +33,7 @@ Function Get-ShopifyCustByEmail {
     )
 
     $Uri = @{
-		"Customers" = "https://$CompURL.myshopify.com/admin/api/2022-04/customers/search.json?query=$Email"
+		"Customers" = "https://$CompURL.myshopify.com/admin/api/2022-04/customers/search.json?query=email:$Email"
     }
 
     $Header = @{
